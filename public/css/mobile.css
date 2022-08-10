@@ -1,0 +1,358 @@
+@media screen and (max-width: 960px) {
+    @font-face {
+      font-family: "Star Jedi";
+      src: url('Starjedi.ttf');
+    }
+    .logo
+    {
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 200pt;
+      filter: drop-shadow(0px 0px 154px rgba(0, 0, 0, 0.25));
+      z-index: 9;
+      top: 0;
+    }
+  
+    .button_text
+    {
+      display: none;
+    }
+  
+    .nav__pane
+    {
+      z-index: 8;
+      position: fixed;
+      height: 64px;
+      width: auto;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      background: linear-gradient(180deg, rgba(34, 34, 34, 0.74) 0%, rgba(21, 21, 21, 0.0592) 150.92%);
+    }
+  
+    .button_icon
+    {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      max-height: 35px;
+      display: block;
+    }
+  
+    .Main_btn
+    {
+      display: none;
+    }
+  
+    .Add_btn
+    {
+      margin-top: 10px;
+      margin-left: 10px;
+      border: none;
+      float: left;
+      display: block;
+      color: white;
+  
+      width: 45px;
+      height: 45px;
+  
+      background: linear-gradient(180deg, rgba(38, 38, 38, 0.74) 0%, rgba(24, 24, 24, 0) 138.55%, rgba(52, 52, 52, 0) 138.55%);
+      filter: drop-shadow(0px 0px 154px rgba(0, 0, 0, 0.25));
+      border-radius: 15px;
+    }
+  
+    .Login_btn
+    {
+      margin-top: 10px;
+      margin-right: 10px;
+      border: none;
+      float: right;
+      display: block;
+      color: white;
+  
+      width: 45px;
+      height: 45px;
+  
+      background: linear-gradient(180deg, rgba(38, 38, 38, 0.74) 0%, rgba(24, 24, 24, 0) 138.55%, rgba(52, 52, 52, 0) 138.55%);
+      filter: drop-shadow(0px 0px 154px rgba(0, 0, 0, 0.25));
+      border-radius: 15px;
+    }
+  
+    .Logout_btn
+    {
+      margin-top: 10px;
+      margin-right: 10px;
+      border: none;
+      float: right;
+      display: block;
+      color: white;
+  
+      width: 45px;
+      height: 45px;
+  
+      background: linear-gradient(180deg, rgba(38, 38, 38, 0.74) 0%, rgba(24, 24, 24, 0) 138.55%, rgba(52, 52, 52, 0) 138.55%);
+      filter: drop-shadow(0px 0px 154px rgba(0, 0, 0, 0.25));
+      border-radius: 15px;
+    }
+  
+    body
+    {
+      background-color: rgb(56, 56, 56);
+    }
+  
+    .section__image__frame
+    {
+      position: relative;
+      display: table;
+      margin: auto;
+      background: radial-gradient(211.07% 110.63% at 50.07% 50%, rgba(255, 255, 255, 0.342) 0%, rgba(24, 24, 24, 0) 100%, rgba(95, 95, 95, 0.74) 100%);
+      filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 0px 31px rgba(255, 255, 255, 0.65));
+      border-radius: 35px;
+      z-index: -2;
+    }
+  
+    .section__title {
+      list-style: none;
+      font-family: 'Star Jedi';
+      font-size: 28px;
+      margin-bottom: 25px;
+      text-align: center;
+      color: #FFFFFF;
+  
+      text-shadow: 0px 4px 25px #FFFFFF, 0px 8px 12px #000000;
+    }
+  
+    .description
+    {
+      margin-top: 15px;
+      margin-left: 15px;
+      margin-right: 15px;
+      text-align: center;
+      font-family: 'Star Jedi';
+      color: white;
+      font-size: 12px;
+    }
+  
+    .section__image {
+      position: relative;
+      margin: 20px;
+      object-fit: cover;
+      border-radius: 8px;
+      display: table;
+      width: 280px;
+      filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+      z-index: -1;
+    }
+  
+    .section {
+      position: relative;
+      padding: 25px;
+      width: 40%;
+      height: auto;
+      border-radius: 90px;
+      display: table;
+      border: none;
+      margin: auto;
+      margin-top: 50px;
+    
+      background: linear-gradient(180deg, rgba(38, 38, 38, 0.74) 0%, rgba(24, 24, 24, 0) 138.55%, rgba(52, 52, 52, 0) 138.55%);
+      border-radius: 60px;
+      z-index: 0;
+    }
+  
+    .add_section
+    {
+      position: relative;
+      padding: 20px;
+      width: 75%;
+      height: auto;
+      border-radius: 90px;
+      display: table;
+      border: none;
+      margin: auto;
+      margin-top: 100px;
+  
+      background: linear-gradient(180deg, rgba(38, 38, 38, 0.74) 0%, rgba(24, 24, 24, 0) 138.55%, rgba(52, 52, 52, 0) 138.55%);
+      border-radius: 60px;
+      z-index: 0;
+    }
+  
+    .item_section
+    {
+      position: relative;
+      padding: 20px;
+      width: 75%;;
+      height: auto;
+      border-radius: 90px;
+      display: table;
+      border: none;
+      margin: auto;
+      margin-top: 100px;
+  
+      background: linear-gradient(180deg, rgba(38, 38, 38, 0.74) 0%, rgba(24, 24, 24, 0) 138.55%, rgba(52, 52, 52, 0) 138.55%);
+      border-radius: 60px;
+      z-index: 0;
+    }
+  
+    .auth_section
+    {
+      position: relative;
+      padding: 20px;
+      width: 75%;
+      height: auto;
+      border-radius: 90px;
+      display:block;
+      border: none;
+      margin: auto;
+      margin-top: 100px;
+      height: 440px;
+  
+      background: linear-gradient(180deg, rgba(38, 38, 38, 0.74) 0%, rgba(24, 24, 24, 0) 138.55%, rgba(52, 52, 52, 0) 138.55%);
+      border-radius: 60px;
+      z-index: 0;
+    }
+  
+    .form-group__input {
+      display: table;
+      position: relative;
+      height: 10%;
+      width: 80%;
+      padding: 7px;
+      left: 0px;
+      margin: auto;
+      text-decoration: none;
+      background: radial-gradient(211.07% 110.63% at 50.07% 50%, rgba(255, 255, 255, 0.5402) 0%, rgba(24, 24, 24, 0) 100%, rgba(95, 95, 95, 0.74) 100%);
+      filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.703));
+      border-radius: 21px;
+      border: none;
+      outline: none;
+      transition: 0.5s;
+    }
+  
+    .form-group__input::placeholder
+    {
+      left: 17px;
+      top: 4px;
+      position: fixed;
+      font-family: 'Star Jedi';
+      font-size: 24px;
+      color: rgb(130, 130, 130);
+      text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.14)
+    }
+  
+    .form-group__input[type=text]
+    {
+      padding-top: 3px;
+      position: relative;
+      padding-left: 17px;
+      color: rgb(255, 255, 255);
+      font-family: 'Star Jedi';
+      font-size: 24px;
+      text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.378);
+    }
+  
+    .form-group__input[type=password]
+    {
+      padding-top: 3px;
+      position: relative;
+      padding-left: 17px;
+      color: rgb(255, 255, 255);
+      font-family: 'Star Jedi';
+      font-size: 24px;
+      text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.378);
+    }
+    
+    .form-group__label {
+      position: relative;
+      text-align: center;
+      display: block;
+      margin-bottom: 20px;
+      font-family: 'Star Jedi';
+      font-size: 32px;
+      margin-left: 0px;
+      color: #FFFFFF;
+    
+      text-shadow: 0px 4px 25px #FFFFFF, 0px 8px 12px #000000;
+    }
+  
+    .form-group__label__image {
+      display: table;
+      margin: auto;
+      margin-bottom: 20px;
+      font-family: 'Star Jedi';
+      font-size: 32px;
+      color: #FFFFFF;
+    
+      text-shadow: 0px 4px 25px #FFFFFF, 0px 8px 12px #000000;
+    }
+  
+    .form-group-image {
+      display: none;
+    }
+  
+    .form-group-image-mobile {
+      display: block;
+      position: relative;
+      float: none;
+      margin: auto;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .form-group__input__image
+    {
+      position: relative;
+      margin: auto;
+      height: 120px;
+      width: 270px;
+      background: radial-gradient(211.07% 110.63% at 50.07% 50%, rgba(255, 255, 255, 0.5402) 0%, rgba(24, 24, 24, 0) 100%, rgba(95, 95, 95, 0.74) 100%);
+      filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 0px 31px rgba(255, 255, 255, 0.25));
+      border-radius: 32px;
+      transition: 0.5s;
+    }
+  
+    .form-group__input__image span
+    {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 10px;
+      height: auto;
+      width: 130px;
+      position: fixed;
+      font-family: 'Star Jedi';
+      font-size: 10px;
+      color: rgb(255, 255, 255);
+      text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.378);
+    }
+  
+    .form-group {
+      margin-bottom: 20px;
+    }
+  
+    .nav_pane_margin
+    {
+      margin-bottom: 110px;
+    }
+  
+    .Sign_btn
+    {
+      left: 50%;
+      transform: translateX(-50%);
+      position: relative;
+      margin: auto;
+      margin-top: 14px;
+      margin-bottom: 12px;
+      border: none;
+      display: block;
+      color: white;
+  
+      width: 220px;
+      height: 60px;
+  
+      background: linear-gradient(180deg, rgba(38, 38, 38, 0.74) 0%, rgba(24, 24, 24, 0) 138.55%, rgba(52, 52, 52, 0) 138.55%);
+      filter: drop-shadow(0px 0px 154px rgba(0, 0, 0, 0.25));
+      border-radius: 137.5px;
+      transition: 0.2s;
+    }
+  }

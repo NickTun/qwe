@@ -1,0 +1,71 @@
+<%- include('particles/header.ejs') %>
+
+<%- include('particles/navigation.ejs') %>
+
+<div class="item_section">
+    <form action="/update" method="post"  enctype="multipart/form-data">
+        <div class="form-group-image">
+            <li class="form-group__label__image" for="image">image</li>
+            <input type="file" id="image" name="image" accept="image/png, image/jpg, image/jpeg, image/webp" style="display: none;" onchange='document.getElementById("file-name").innerHTML = this.files[0].name; loadFile(event);'>
+            <script>
+            var loadFile = function(event) {
+                var output = document.getElementById('output');
+                output.src = URL.createObjectURL(event.target.files[0]);
+                output.onload = function() {
+                URL.revokeObjectURL(output.src) // free memory
+                }
+                var outputm = document.getElementById('outputM');
+                outputm.src = URL.createObjectURL(event.target.files[0]);
+                outputm.onload = function() {
+                URL.revokeObjectURL(output.src) // free memory
+                }
+            };
+            </script>
+            <label for="image">
+                <div class="form-group__input__image" style="height: 60px; width:200px; border-radius: 21px;">
+                    <span id="file-name" class="file-box" style="display:none;"></span>
+                    <img src="/img/<%= item.image %>" style="max-width: 180px; max-height: 51px; top: 50%; transform: translateY(-50%); position: relative; filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));" id="output"></img>
+                </div>
+            </label>
+            
+            <button class="form-button" type="submit" style="width:200px;"><li>update</li></button>
+
+            <button class="remove-button" type="submit" value="Remove" form="remove"><li>Remove</li></button>
+        </div>
+
+        <div class="form-group">
+            <li class="form-group__label" for="title">title</li>
+            <input value="<%= item.title %>" class="form-group__input" type="text" id="title" name="title"
+                placeholder="title">
+        </div>
+    
+        <div class="form-group">
+            <li class="form-group__label" for="title">description</li>
+            <input value="<%= item.description %>" class="form-group__input" type="text" id="description" name="description"
+            placeholder="description">
+        </div>
+        
+        <div class="form-group-image-mobile">
+            <li class="form-group__label__image" for="image">image</li>
+            <label for="image">
+                <div class="form-group__input__image">
+                    <span id="file-name" class="file-box" style="display:none;"></span>
+                    <img src="/img/<%= item.image %>" style="max-width: 230px; max-height: 100px; top: 50%; transform: translateY(-50%); position: relative; filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));" id="outputM"></img>
+                </div>
+            </label>
+            
+            <button class="form-button" type="submit" style="width:200px;"><li>update</li></button>
+
+            <button class="remove-button" type="submit" value="Remove" form="remove"><li>Remove</li></button>
+        </div>
+
+        <input value="<%= item.id %>" type="hidden" name="id">
+    
+    </form>
+
+    <form action="/remove" method="post" id="remove">
+        <input value="<%= item.id %>" type="hidden" name="id">
+    </form>
+</div>
+
+<%- include('particles/footer.ejs') %>

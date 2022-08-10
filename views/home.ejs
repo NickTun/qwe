@@ -1,0 +1,27 @@
+<%- include('particles/header.ejs') %>
+
+<%- include('particles/navigation.ejs') %>
+
+<% for (let i = 0; i < items.length; i++) { %>
+
+    <div class="section">
+        <% if (auth) { %>
+        <a href="/items/<%= items[i].id %>">
+            <h2 class="section__title"><%= items[i].title %></h2>
+            <div class="section__image__frame">
+                <img class="section__image" src="img/<%= items[i].image %>">
+            </div>
+            <h2 class="description" name="description"><%= items[i].description %></h2>
+        </a>
+        <% } else { %>
+            <h2 class="section__title"><%= items[i].title %></h2>
+            <div class="section__image__frame">
+                <img class="section__image" src="img/<%= items[i].image %>">
+            </div>
+            <h2 class="description" name="description"><%= items[i].description %></h2>
+        <% } %>
+    </div>
+
+<% } %>
+
+<%- include('particles/footer.ejs') %>

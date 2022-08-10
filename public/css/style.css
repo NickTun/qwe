@@ -1,0 +1,493 @@
+@font-face {
+  font-family: "Star Jedi";
+  src: url('Starjedi.ttf');
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group-image {
+  display:table;
+  position: relative;
+  float: right;
+  margin-bottom: 20px;
+  margin-right: 45px;
+  text-align: center;
+}
+
+.form-group-image-mobile {
+  display: none;
+}
+
+.form-group__label {
+  display: table;
+  margin-bottom: 20px;
+  font-family: 'Star Jedi';
+  font-size: 42px;
+  margin-left: 45px;
+  color: #FFFFFF;
+
+  text-shadow: 0px 4px 25px #FFFFFF, 0px 8px 12px #000000;
+}
+
+.form-group__label__image {
+  display: table;
+  margin: auto;
+  margin-bottom: 20px;
+  font-family: 'Star Jedi';
+  font-size: 42px;
+  color: #FFFFFF;
+
+  text-shadow: 0px 4px 25px #FFFFFF, 0px 8px 12px #000000;
+}
+
+.form-group__input {
+  display: table;
+  position: relative;
+  height: 50px;
+  width: 600px;
+  left: 20px;
+  padding: 7px;
+  text-decoration: none;
+  background: radial-gradient(211.07% 110.63% at 50.07% 50%, rgba(255, 255, 255, 0.5402) 0%, rgba(24, 24, 24, 0) 100%, rgba(95, 95, 95, 0.74) 100%);
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.703));
+  border-radius: 21px;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+
+.form-group__input:hover
+{
+  /*background: radial-gradient(211.07% 110.63% at 50.07% 50%, rgba(230, 230, 230, 0.54) 0%, rgba(24, 24, 24, 0) 100%, rgba(95, 95, 95, 0.74) 100%);*/
+  background-color: rgb(109, 109, 109);
+  /*transition: 0.5s;*/
+}
+
+.form-group__input::placeholder
+{
+  left: 17px;
+  top: 8px;
+  position: fixed;
+  font-family: 'Star Jedi';
+  font-size: 24px;
+  color: rgb(130, 130, 130);
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.14)
+}
+
+.form-group__input[type=text]
+{
+  padding-top: 3px;
+  position: relative;
+  padding-left: 17px;
+  color: rgb(255, 255, 255);
+  font-family: 'Star Jedi';
+  font-size: 24px;
+  text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.378);
+}
+
+.form-group__input[type=password]
+{
+  padding-top: 3px;
+  position: relative;
+  padding-left: 17px;
+  color: rgb(255, 255, 255);
+  font-family: 'Star Jedi';
+  font-size: 24px;
+  text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.378);
+}
+
+.form-group__input__image
+{
+  position: sticky;
+  margin: auto;
+  height: 150px;
+  width: 150px;
+  background: radial-gradient(211.07% 110.63% at 50.07% 50%, rgba(255, 255, 255, 0.5402) 0%, rgba(24, 24, 24, 0) 100%, rgba(95, 95, 95, 0.74) 100%);
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 0px 31px rgba(255, 255, 255, 0.25));
+  border-radius: 32px;
+  transition: 0.5s;
+}
+
+.form-group__input__image:hover
+{
+  cursor: pointer;
+  background-color: rgb(109, 109, 109);
+  transition: 0.5s;
+}
+
+.form-group__input__image span
+{
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  height: auto;
+  width: 130px;
+  position: fixed;
+  font-family: 'Star Jedi';
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.378);
+}
+
+.form-button {
+  position: relative;
+  height: 60px;
+  width: 150px;
+  display: block;
+  margin: auto;
+  border: none;
+  margin-top: 24px;
+
+  background: radial-gradient(224.33% 188.78% at 50.07% 50%, rgba(171, 255, 169, 0.74) 0%, rgba(24, 24, 24, 0) 100%, rgba(151, 232, 150, 0.74) 100%);
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 0px 31px rgba(255, 255, 255, 0.25));
+  border-radius: 21px;
+  transition: 0.5s;
+}
+
+.form-button li
+{
+  top: -5px;
+  position: fixed;
+  list-style: none;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-family: 'Star Jedi';
+  font-size: 38px;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.874);
+}
+
+.form-button:hover {
+  cursor: pointer;
+  background-color: rgba(171, 255, 169, 0.74);
+  transition: 0.5s;
+}
+
+.remove-button {
+  position: relative;
+  height: 60px;
+  width: 200px;
+  display: block;
+  margin: auto;
+  border: none;
+  margin-top: 24px;
+
+  background: radial-gradient(224.33% 188.78% at 50.07% 50%, rgba(255, 169, 169, 0.74) 0%, rgba(24, 24, 24, 0) 100%, rgba(151, 232, 150, 0.74) 100%);
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 0px 31px rgba(255, 255, 255, 0.25));
+  border-radius: 21px;
+  transition: 0.5s;
+}
+
+.remove-button li
+{
+  top: -5px;
+  position: fixed;
+  list-style: none;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-family: 'Star Jedi';
+  font-size: 38px;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.874);
+}
+
+.remove-button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 133, 133, 0.74);
+  transition: 0.5s;
+}
+
+.section {
+  position: relative;
+  padding: 20px;
+  width: 710px;
+  height: auto;
+  border-radius: 90px;
+  display: table;
+  border: none;
+  margin: auto;
+  margin-top: 100px;
+
+  background: linear-gradient(180deg, rgba(38, 38, 38, 0.74) 0%, rgba(24, 24, 24, 0) 138.55%, rgba(52, 52, 52, 0) 138.55%);
+  border-radius: 74px;
+  z-index: 0;
+}
+
+.auth_section
+{
+  position: relative;
+  padding: 20px;
+  width: 670px;
+  height: auto;
+  border-radius: 90px;
+  display:block;
+  border: none;
+  margin: auto;
+  margin-top: 100px;
+  height: 440px;
+
+  background: linear-gradient(180deg, rgba(38, 38, 38, 0.74) 0%, rgba(24, 24, 24, 0) 138.55%, rgba(52, 52, 52, 0) 138.55%);
+  border-radius: 74px;
+  z-index: 0;
+}
+
+.section__image {
+  position: relative;
+  margin: 20px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: table;
+  width: 630px;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+  z-index: -1;
+}
+
+.section__image__frame
+{
+  position: relative;
+  display: table;
+  margin: auto;
+  background: radial-gradient(211.07% 110.63% at 50.07% 50%, rgba(255, 255, 255, 0.342) 0%, rgba(24, 24, 24, 0) 100%, rgba(95, 95, 95, 0.74) 100%);
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 0px 31px rgba(255, 255, 255, 0.65));
+  border-radius: 65px;
+  z-index: -2;
+}
+
+.section__title {
+  list-style: none;
+  font-family: 'Star Jedi';
+  font-size: 42px;
+  margin-top: 0;
+  text-align: center;
+  color: #FFFFFF;
+
+  text-shadow: 0px 4px 25px #FFFFFF, 0px 8px 12px #000000;
+}
+
+.description
+{
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  font-family: 'Star Jedi';
+  color: white;
+  font-size: 18px;
+}
+
+.add_section
+{
+  position: relative;
+  padding: 20px;
+  width: 900px;
+  height: auto;
+  border-radius: 90px;
+  display: table;
+  border: none;
+  margin: auto;
+  margin-top: 100px;
+
+  background: linear-gradient(180deg, rgba(38, 38, 38, 0.74) 0%, rgba(24, 24, 24, 0) 138.55%, rgba(52, 52, 52, 0) 138.55%);
+  border-radius: 74px;
+  z-index: 0;
+}
+
+.item_section
+{
+  position: relative;
+  padding: 20px;
+  width: 950px;
+  height: auto;
+  border-radius: 90px;
+  display: table;
+  border: none;
+  margin: auto;
+  margin-top: 100px;
+
+  background: linear-gradient(180deg, rgba(38, 38, 38, 0.74) 0%, rgba(24, 24, 24, 0) 138.55%, rgba(52, 52, 52, 0) 138.55%);
+  border-radius: 74px;
+  z-index: 0;
+}
+
+body
+{
+  margin: 0;
+  background-color: rgb(56, 56, 56);
+}
+
+a
+{
+  text-decoration: none;
+}
+
+.remove-button:hover
+{
+  cursor: pointer;
+}
+
+.nav__pane
+{
+  position: fixed;
+  height: 85px;
+  width: auto;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background: linear-gradient(180deg, rgba(34, 34, 34, 0.74) 0%, rgba(21, 21, 21, 0.0592) 150.92%);
+}
+
+.Login_btn
+{
+  margin-top: 18px;
+  margin-right: 18px;
+  border: none;
+  float: right;
+  display: block;
+  color: white;
+
+  width: 120px;
+  height: 50px;
+
+  background: linear-gradient(180deg, rgba(38, 38, 38, 0.74) 0%, rgba(24, 24, 24, 0) 138.55%, rgba(52, 52, 52, 0) 138.55%);
+  filter: drop-shadow(0px 0px 154px rgba(0, 0, 0, 0.25));
+  border-radius: 137.5px;
+}
+
+.Logout_btn
+{
+  margin-top: 18px;
+  margin-right: 18px;
+  border: none;
+  float: right;
+  display: block;
+  color: white;
+
+  width: 145px;
+  height: 50px;
+
+  background: linear-gradient(180deg, rgba(38, 38, 38, 0.74) 0%, rgba(24, 24, 24, 0) 138.55%, rgba(52, 52, 52, 0) 138.55%);
+  filter: drop-shadow(0px 0px 154px rgba(0, 0, 0, 0.25));
+  border-radius: 137.5px;
+}
+
+.Main_btn
+{
+  margin-top: 18px;
+  margin-left: 18px;
+  border: none;
+  float: left;
+  display: block;
+  color: white;
+
+  width: 115px;
+  height: 50px;
+
+  background: linear-gradient(180deg, rgba(38, 38, 38, 0.74) 0%, rgba(24, 24, 24, 0) 138.55%, rgba(52, 52, 52, 0) 138.55%);
+  filter: drop-shadow(0px 0px 154px rgba(0, 0, 0, 0.25));
+  border-radius: 137.5px;
+}
+
+.Add_btn
+{
+  margin-top: 18px;
+  margin-left: 18px;
+  border: none;
+  float: left;
+  display: block;
+  color: white;
+
+  width: 95px;
+  height: 50px;
+
+  background: linear-gradient(180deg, rgba(38, 38, 38, 0.74) 0%, rgba(24, 24, 24, 0) 138.55%, rgba(52, 52, 52, 0) 138.55%);
+  filter: drop-shadow(0px 0px 154px rgba(0, 0, 0, 0.25));
+  border-radius: 137.5px;
+}
+
+.Sign_btn
+{
+  margin-top: 18px;
+  margin-left: 40px;
+  border: none;
+  float: left;
+  display: block;
+  color: white;
+
+  width: 220px;
+  height: 60px;
+
+  background: linear-gradient(180deg, rgba(38, 38, 38, 0.74) 0%, rgba(24, 24, 24, 0) 138.55%, rgba(52, 52, 52, 0) 138.55%);
+  filter: drop-shadow(0px 0px 154px rgba(0, 0, 0, 0.25));
+  border-radius: 137.5px;
+  transition: 0.2s;
+}
+
+.Sign_btn:hover
+{
+  cursor: pointer;
+  background-color: rgba(75, 75, 75, 0.74);
+}
+
+.Sign_btn li
+{
+  text-align: center;
+  top: -5px;
+  position: fixed;
+  list-style: none;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-family: 'Star Jedi';
+  src: url("/Starjedi.ttf");
+  font-size: 38px;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.874);
+}
+
+#myVideo {
+  object-fit: cover;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+.button_text
+{
+  list-style: none;
+  font-family: 'Star Jedi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  position: relative;
+  top: -2px;
+  transition: 0.2s;
+}
+
+.button_text:hover
+{
+  cursor: pointer;
+  color: rgb(189, 189, 189);
+  transition: 0.2s;
+}
+
+.logo
+{
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 650px;
+  z-index: 9;
+  top: 0;
+  filter: drop-shadow(0px 0px 154px rgba(0, 0, 0, 0.25));
+}
+
+.button_icon
+{
+  display: none;
+}
+
+.nav_pane_margin
+{
+  margin-bottom: 200px;
+}
