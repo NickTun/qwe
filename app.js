@@ -10,10 +10,10 @@ const fs = require("fs");
 const upload = multer({ dest: "./public/img/" });
 
 const connection = mysql.createConnection({
-  host: "localhost",
-  database: "lightsabers",
-  user: "root",
-  password: "Secret"
+  host: process.env.DB_HOST,
+  database: process.env.DB_NAME,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS
 });
 
 connection.connect(function (err) { if (err) throw err; });
@@ -38,12 +38,12 @@ function isAuth(req, res, next) {
   if (req.session.auth) {
     next();
   } else {
-    res.redirect('/');
+    res.redirect('');
   }
 }
 
 // Запуск веб-сервера по адресу http://localhost:3000
-app.listen(3333)
+app.listen(3003)
 /**
  * Маршруты
  */
