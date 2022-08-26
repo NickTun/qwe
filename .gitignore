@@ -103,6 +103,6 @@ dist
 # TernJS port file
 .tern-port
 
-public/video.webm
+public/video.mp4
 
 .env
