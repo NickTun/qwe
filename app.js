@@ -107,7 +107,7 @@ app.post('/store', upload.single("image"), (req, res) => {
     [[req.body.title], [req.file.originalname], [req.body.description]], (err, data, fields) => {
       if (err) throw err;
 
-      res.redirect('/')
+      res.redirect('./')
   });
 })
 
@@ -126,7 +126,7 @@ app.post('/update', upload.single("image"), (req, res) => {
     [[req.body.title], [req.file.originalname], [req.body.description], [req.body.id]], (err, data, fields) => {
       if (err) throw err;
 
-      res.redirect('/')
+      res.redirect('./')
   });
 })
 
@@ -137,7 +137,7 @@ app.post('/remove', (req, res) => {
     [[req.body.id]], (err, data, fields) => {
       if (err) throw err;
 
-      res.redirect('/')
+      res.redirect('./')
   });
 })
 
@@ -149,7 +149,7 @@ app.post('/register', (req, res) => {
  
        req.session.auth = true;
  
-       res.redirect('/')
+       res.redirect('./')
    }); 
  });
 
@@ -162,18 +162,18 @@ app.post('/register', (req, res) => {
         {
           console.log("Login success");
           req.session.auth = true;
-          res.redirect('/')
+          res.redirect('./')
         }
         else
         {
-          res.redirect('/')
+          res.redirect('./')
         }
       })
 });
 
 app.get('/logout', (req, res) => {
   req.session.auth = false;
-  res.redirect('/')
+  res.redirect('./')
 });
 
 app.post("/upload", upload.single("image"), (req, res) => {
@@ -186,6 +186,6 @@ app.post("/upload", upload.single("image"), (req, res) => {
   fs.rename(tempPath, targetPath, (err) => {
     if (err) console.log(err);
     
-    res.redirect('/');
+    res.redirect('./');
   });
 });
