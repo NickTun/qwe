@@ -62,16 +62,25 @@ app.get('/', (req, res) => {
 })
 
 app.get('/items/:id', (req, res) => {
-  connection.query("SELECT * FROM items WHERE id=?", [req.params.id],
+  connection.query("SELECT * FROM items WHERE id=?", [[req.params.id]],
     (err, data, fields) => {
       if (err) throw err;
 
       res.render('item', {
-        'item': data[0],
+        item: data[0],
         auth: req.session.auth
-      })
+      });
   });
 })
+
+app.get('/item/:param', (req, res) => {
+	connection.query("select * from items where id=?", [[req.params.param]],
+	(err, data, fields) => {
+		if (err) throw err;
+
+		res.render('test', {item: data[0], auth: req.session.auth});
+	});
+});
 
 app.get('/add', (req, res) => {
   res.render('add', {
@@ -122,11 +131,11 @@ app.post('/update', upload.single("image"), (req, res) => {
     if (err) console.log(err);
   });
   connection.query(
-    "UPDATE items SET title=?, image=?, description=? WHERE id=?",
+	"UPDATE items SET title=?, image=?, description=? WHERE id=?",
     [[req.body.title], [req.file.originalname], [req.body.description], [req.body.id]], (err, data, fields) => {
       if (err) throw err;
 
-      res.redirect('./')
+      res.redirect('/')
   });
 })
 
